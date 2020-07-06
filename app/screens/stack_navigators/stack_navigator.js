@@ -4,24 +4,22 @@ import SplashScreen from '../splash_screen';
 import Login from '../login_screen';
 
 const getNavigationOptions = () => ({
-  navigationOptions: {
-    headerShown: false,
-  },
+  headerShown: false,
 });
 
 const StackNavigator = createStackNavigator(
   {
-    splash: {
-      screen: SplashScreen,
-      ...getNavigationOptions(),
-    },
     login: {
       screen: Login,
-      ...getNavigationOptions(),
+      navigationOptions: getNavigationOptions(),
+    },
+    splash: {
+      screen: SplashScreen,
+      navigationOptions: getNavigationOptions(),
     },
     tabs: {
       screen: TabNavigator,
-      ...getNavigationOptions(),
+      navigationOptions: getNavigationOptions(),
     },
   },
   {},
