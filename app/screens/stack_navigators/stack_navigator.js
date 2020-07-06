@@ -1,22 +1,30 @@
-import { createStackNavigator } from 'react-navigation-stack';
-import TabNavigator from './tab_navigator'
-import SplashScreen from '../splash_screen'
+import {createStackNavigator} from 'react-navigation-stack';
+import TabNavigator from './tab_navigator';
+import SplashScreen from '../splash_screen';
+import Login from '../login_screen';
 
-export default StackNavigator = createStackNavigator(
-    {
-        splash: {
-            screen: SplashScreen,
-            navigationOptions: {
-                headerShown: false,
-            }
-        },
-        tabs: {
-            screen: TabNavigator,
-            navigationOptions: {
-                headerShown: false,
-            }
-        }
+const getNavigationOptions = () => ({
+  navigationOptions: {
+    headerShown: false,
+  },
+});
+
+const StackNavigator = createStackNavigator(
+  {
+    splash: {
+      screen: SplashScreen,
+      ...getNavigationOptions(),
     },
-    {
-    }
+    login: {
+      screen: Login,
+      ...getNavigationOptions(),
+    },
+    tabs: {
+      screen: TabNavigator,
+      ...getNavigationOptions(),
+    },
+  },
+  {},
 );
+
+export default StackNavigator;
