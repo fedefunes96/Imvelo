@@ -5,8 +5,8 @@ export const styles = {
     padding: 30,
   },
   logo: {
-    height: 200,
-    width: 200,
+    height: 250,
+    width: 250,
     alignSelf: 'center',
   },
   input: {

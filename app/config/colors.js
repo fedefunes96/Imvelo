@@ -6,4 +6,4 @@ export const COLORS = {
     gray: "#c1c1c1"
 }
 
-export const MAIN_GRADIENT_COLORS = ['#00A79A', '#00709C'];
+export const MAIN_GRADIENT_COLORS = ['#00A79A', '#01709C', '#00709C'];
