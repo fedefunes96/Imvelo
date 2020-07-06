@@ -1,4 +1,4 @@
-import React from 'react';  
+import React from 'react';
 import { View, Animated } from 'react-native';
 import { StackActions, NavigationActions } from 'react-navigation';
 import { COLORS } from '../config/colors'
@@ -32,10 +32,10 @@ export default class SplashScreen extends React.Component {
     setTimePassedSuccesfully() {
         const resetAction = StackActions.reset({
             index: 0,
-            actions: [NavigationActions.navigate({ routeName: 'tabs' })],
+            actions: [NavigationActions.navigate({ routeName: 'login' })],
           });
 
-        this.props.navigation.dispatch(resetAction);        
+        this.props.navigation.dispatch(resetAction);
     }
 
     render() {
