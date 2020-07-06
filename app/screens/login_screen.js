@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import {Image, TextInput, Text} from 'react-native';
+import {TextInput, Text} from 'react-native';
 import GradientContainer from './common/GradientContainer';
 import {styles} from '../styles/common';
 import {Button} from 'react-native-paper';
+import ImveloLogo from './common/ImveloLogo';
 
 const Login = props => {
   const [email, setEmail] = useState('');
@@ -18,10 +19,7 @@ const Login = props => {
 
   return (
     <GradientContainer>
-      <Image
-        source={require('../../assets/imvelo_logo.png')}
-        style={styles.logo}
-      />
+      <ImveloLogo />
 
       <TextInput
         value={email}
