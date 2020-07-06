@@ -40,11 +40,18 @@ const Login = props => {
         Forgot Password?
       </Text>
 
-      <Button mode="contained" color="white" labelStyle={styles.color_main} style={styles.button} onPress={onSignIn}>
+      <Button
+        mode="contained"
+        color="white"
+        labelStyle={styles.color_main}
+        style={styles.button}
+        onPress={onSignIn}>
         Sign in
       </Button>
 
-      <Text style={[styles.center, styles.color_w, styles.underline, styles.bottom]} onPress={onSignUp}>
+      <Text
+        style={[styles.center, styles.color_w, styles.underline, styles.bottom]}
+        onPress={onSignUp}>
         Sign up
       </Text>
     </GradientContainer>
