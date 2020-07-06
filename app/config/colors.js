@@ -5,3 +5,5 @@ export const COLORS = {
     white: "#ffffff",
     gray: "#c1c1c1"
 }
+
+export const MAIN_GRADIENT_COLORS = ['#00A79A', '#00709C'];
