@@ -1,13 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {TextInput, Text} from 'react-native';
 import GradientContainer from './common/GradientContainer';
 import {styles} from '../styles/common';
 import {Button} from 'react-native-paper';
 import ImveloLogo from './common/ImveloLogo';
+import SplashScreen from 'react-native-splash-screen'
 
 const Login = props => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  useEffect(() => {
+    SplashScreen.hide();
+  });
 
   const onSignIn = () => {
     // TODO: navigate somewhere
