@@ -41,4 +41,10 @@ export const styles = {
     position: 'absolute',
     bottom: 20,
   },
+  row: {
+    flexDirection: 'row',
+  },
+  col: {
+    flexDirection: 'column',
+  },
 };
