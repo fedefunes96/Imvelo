@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
-import VideoList from './VideList';
+import VideoList from './VideoList';
 
 const HomeScreen = () => {
   useEffect(() => {
