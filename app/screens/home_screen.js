@@ -7,7 +7,7 @@ const HomeScreen = () => {
     SplashScreen.hide();
   });
 
-  return <VideoList videos={[]} />;
+  return <VideoList videos={require('../../assets/videos')} />;
 };
 
 export default HomeScreen;

@@ -1,36 +1,34 @@
 import React, {useMemo} from 'react';
-import {isEven} from '../helpers/numeric';
 import GradientContainer from './common/GradientContainer';
 import {styles} from '../styles/common';
-import {ScrollView, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 import VideoTile from './VideoTile';
+import {groupInPairs} from '../helpers/arrays';
 
 const VideoList = props => {
   const groupedVideos = useMemo(
-    () =>
-      props.videos.reduce((result, value, index, array) => {
-        if (isEven(index)) {
-          result.push(array.slice(index, index + 2));
-        }
-        return result;
-      }, []),
-    [props.videos],
+    () => groupInPairs(props.videos), [props.videos]
+  );
+
+  const renderVideoTile = video => (
+    <View style={styles.col}>
+      <VideoTile video={video} />
+    </View>
+  );
+
+  const renderVideosRow = videos => (
+    <View style={styles.row}>
+      {videos.map(video => renderVideoTile(video))}
+    </View>
   );
 
   return (
     <GradientContainer style={styles.container}>
-      <ScrollView>
-        {groupedVideos.map(videosPair => (
-          <View style={styles.row}>
-            <View style={styles.col}>
-              <VideoTile video={videosPair[0]} />
-            </View>
-            <View style={styles.col}>
-              <VideoTile video={videosPair[1]} />
-            </View>
-          </View>
-        ))}
-      </ScrollView>
+      <FlatList
+        data={groupedVideos}
+        renderItem={({item}) => renderVideosRow(item)}
+        keyExtractor={item => item[0].title}
+      />
     </GradientContainer>
   );
 };
