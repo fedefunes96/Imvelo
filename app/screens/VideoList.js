@@ -3,6 +3,7 @@ import {styles} from '../styles/common';
 import {FlatList, View} from 'react-native';
 import VideoTile from './VideoTile';
 import {groupRandomly} from '../helpers/arrays';
+import GradientContainer from './common/GradientContainer';
 
 const VideoList = props => {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -39,13 +40,14 @@ const VideoList = props => {
   );
 
   return (
-    <View style={[styles.container, styles.m_10]}>
+    <GradientContainer>
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={groupedVideos}
         renderItem={({item}) => renderVideosRow(item)}
         keyExtractor={item => item[0].title}
       />
-    </View>
+    </GradientContainer>
   );
 };
 

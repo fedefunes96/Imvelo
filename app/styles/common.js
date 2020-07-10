@@ -1,8 +1,11 @@
-export const styles = {
+import {StyleSheet} from 'react-native';
+
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 10,
   },
   logo: {
     height: 250,
@@ -48,7 +51,14 @@ export const styles = {
     flexDirection: 'column',
   },
   video_container: {
-    elevation: 4,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.36,
+    shadowRadius: 6.68,
+    elevation: 8,
   },
   video_tile: {
     aspectRatio: 1,
@@ -65,4 +75,4 @@ export const styles = {
     paddingRight: 2,
     paddingLeft: 2,
   },
-};
+});
