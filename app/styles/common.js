@@ -2,7 +2,7 @@ export const styles = {
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: 30,
+    alignItems: 'center',
   },
   logo: {
     height: 250,
@@ -48,15 +48,21 @@ export const styles = {
     flexDirection: 'column',
   },
   video_container: {
-    margin: 10,
     elevation: 4,
   },
   video_tile: {
-    width: 150,
-    height: 200,
+    aspectRatio: 1,
+    width: 172,
   },
   video_wide_tile: {
-    width: 320,
-    height: 200,
+    aspectRatio: 1,
+    width: 350,
+  },
+  m_10: {
+    margin: 10,
+  },
+  pd_5: {
+    paddingRight: 2,
+    paddingLeft: 2,
   },
 };

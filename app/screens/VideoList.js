@@ -12,7 +12,7 @@ const VideoList = props => {
   ]);
   console.log(groupedVideos);
   const renderVideoTile = video => (
-    <View style={styles.col} key={video.id}>
+    <View style={[styles.col, styles.pd_5]} key={video.id}>
       <VideoTile
         video={video}
         onPress={() => setPlayingVideo(video.id)}
@@ -31,7 +31,7 @@ const VideoList = props => {
   );
 
   const renderVideosRow = videos => (
-    <View style={styles.row}>
+    <View style={[styles.row, styles.m_10]}>
       {videos.length > 1
         ? videos.map(video => renderVideoTile(video))
         : renderWideVideoTile(videos[0])}
@@ -39,7 +39,7 @@ const VideoList = props => {
   );
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, styles.m_10]}>
       <FlatList
         data={groupedVideos}
         renderItem={({item}) => renderVideosRow(item)}
