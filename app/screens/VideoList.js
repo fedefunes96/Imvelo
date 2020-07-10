@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useMemo, useState} from 'react';
 import GradientContainer from './common/GradientContainer';
 import {styles} from '../styles/common';
 import {FlatList, View} from 'react-native';
@@ -6,13 +6,19 @@ import VideoTile from './VideoTile';
 import {groupInPairs} from '../helpers/arrays';
 
 const VideoList = props => {
-  const groupedVideos = useMemo(
-    () => groupInPairs(props.videos), [props.videos]
-  );
+  const [playingVideo, setPlayingVideo] = useState(null);
+
+  const groupedVideos = useMemo(() => groupInPairs(props.videos), [
+    props.videos,
+  ]);
 
   const renderVideoTile = video => (
-    <View style={styles.col}>
-      <VideoTile video={video} />
+    <View style={styles.col} key={video.id}>
+      <VideoTile
+        video={video}
+        onPress={() => setPlayingVideo(video.id)}
+        playing={playingVideo === video.id}
+      />
     </View>
   );
 
@@ -23,13 +29,13 @@ const VideoList = props => {
   );
 
   return (
-    <GradientContainer style={styles.container}>
+    <View style={styles.container}>
       <FlatList
         data={groupedVideos}
         renderItem={({item}) => renderVideosRow(item)}
         keyExtractor={item => item[0].title}
       />
-    </GradientContainer>
+    </View>
   );
 };
 

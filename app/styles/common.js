@@ -47,4 +47,12 @@ export const styles = {
   col: {
     flexDirection: 'column',
   },
+  video_container: {
+    margin: 10,
+    elevation: 4,
+  },
+  video_tile: {
+    width: 150,
+    height: 200,
+  },
 };
