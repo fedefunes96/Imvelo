@@ -10,12 +10,12 @@ const getNavigationOptions = () => ({
 
 const StackNavigator = createStackNavigator(
   {
-    home: {
-      screen: HomeScreen,
-      navigationOptions: getNavigationOptions(),
-    },
     login: {
       screen: Login,
+      navigationOptions: getNavigationOptions(),
+    },
+    home: {
+      screen: HomeScreen,
       navigationOptions: getNavigationOptions(),
     },
     splash: {

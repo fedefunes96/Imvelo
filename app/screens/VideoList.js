@@ -40,7 +40,7 @@ const VideoList = props => {
   );
 
   return (
-    <GradientContainer>
+    <GradientContainer style={styles.align_items_center}>
       <FlatList
         showsVerticalScrollIndicator={false}
         data={groupedVideos}
