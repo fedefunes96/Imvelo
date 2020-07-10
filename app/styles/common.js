@@ -55,4 +55,8 @@ export const styles = {
     width: 150,
     height: 200,
   },
+  video_wide_tile: {
+    width: 320,
+    height: 200,
+  },
 };

@@ -1,17 +1,16 @@
 import React, {useMemo, useState} from 'react';
-import GradientContainer from './common/GradientContainer';
 import {styles} from '../styles/common';
 import {FlatList, View} from 'react-native';
 import VideoTile from './VideoTile';
-import {groupInPairs} from '../helpers/arrays';
+import {groupRandomly} from '../helpers/arrays';
 
 const VideoList = props => {
   const [playingVideo, setPlayingVideo] = useState(null);
 
-  const groupedVideos = useMemo(() => groupInPairs(props.videos), [
+  const groupedVideos = useMemo(() => groupRandomly(props.videos), [
     props.videos,
   ]);
-
+  console.log(groupedVideos);
   const renderVideoTile = video => (
     <View style={styles.col} key={video.id}>
       <VideoTile
@@ -22,9 +21,20 @@ const VideoList = props => {
     </View>
   );
 
+  const renderWideVideoTile = video => (
+    <VideoTile
+      video={video}
+      onPress={() => setPlayingVideo(video.id)}
+      playing={playingVideo === video.id}
+      wide
+    />
+  );
+
   const renderVideosRow = videos => (
     <View style={styles.row}>
-      {videos.map(video => renderVideoTile(video))}
+      {videos.length > 1
+        ? videos.map(video => renderVideoTile(video))
+        : renderWideVideoTile(videos[0])}
     </View>
   );
 

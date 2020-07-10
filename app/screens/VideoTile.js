@@ -14,7 +14,7 @@ const VideoTile = props => {
         {props.playing ? (
           <Video
             source={{uri: props.video.source}}
-            style={styles.video_tile}
+            style={props.wide ? styles.video_wide_tile : styles.video_tile}
             muted={true}
             resizeMode={'cover'}
             volume={1.0}
@@ -24,7 +24,7 @@ const VideoTile = props => {
         ) : (
           <Image
             source={{uri: props.video.thumb}}
-            style={styles.video_tile}
+            style={props.wide ? styles.video_wide_tile : styles.video_tile}
           />
         )}
       </TouchableWithoutFeedback>
