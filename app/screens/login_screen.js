@@ -15,7 +15,7 @@ const Login = props => {
   });
 
   const onSignIn = () => {
-    props.navigation.navigate('home');
+    props.navigation.navigate('tabs');
   };
 
   const onSignUp = () => {

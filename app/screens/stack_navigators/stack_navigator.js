@@ -14,14 +14,6 @@ const StackNavigator = createStackNavigator(
       screen: Login,
       navigationOptions: getNavigationOptions(),
     },
-    home: {
-      screen: HomeScreen,
-      navigationOptions: getNavigationOptions(),
-    },
-    splash: {
-      screen: SplashScreen,
-      navigationOptions: getNavigationOptions(),
-    },
     tabs: {
       screen: TabNavigator,
       navigationOptions: getNavigationOptions(),
