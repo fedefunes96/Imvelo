@@ -1,8 +1,12 @@
-export const styles = {
+import {StyleSheet} from 'react-native';
+
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    padding: 30,
+  },
+  align_items_center: {
+    alignItems: 'center',
   },
   logo: {
     height: 250,
@@ -41,4 +45,35 @@ export const styles = {
     position: 'absolute',
     bottom: 20,
   },
-};
+  row: {
+    flexDirection: 'row',
+  },
+  col: {
+    flexDirection: 'column',
+  },
+  video_container: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.36,
+    shadowRadius: 6.68,
+    elevation: 8,
+  },
+  video_tile: {
+    aspectRatio: 1,
+    width: 172,
+  },
+  video_wide_tile: {
+    aspectRatio: 1,
+    width: 350,
+  },
+  m_10: {
+    margin: 10,
+  },
+  pd_5: {
+    paddingRight: 2,
+    paddingLeft: 2,
+  },
+});

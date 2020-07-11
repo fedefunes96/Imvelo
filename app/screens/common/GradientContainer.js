@@ -4,7 +4,7 @@ import {MAIN_GRADIENT_COLORS} from '../../config/colors';
 import {styles} from '../../styles/common';
 
 const GradientContainer = props => (
-  <LinearGradient colors={MAIN_GRADIENT_COLORS} style={styles.container}>
+  <LinearGradient colors={MAIN_GRADIENT_COLORS} style={[styles.container, props.style]}>
     {props.children}
   </LinearGradient>
 );
