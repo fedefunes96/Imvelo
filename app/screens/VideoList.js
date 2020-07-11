@@ -11,7 +11,7 @@ const VideoList = props => {
   const groupedVideos = useMemo(() => groupRandomly(props.videos), [
     props.videos,
   ]);
-  console.log(groupedVideos);
+
   const renderVideoTile = video => (
     <View style={[styles.col, styles.pd_5]} key={video.id}>
       <VideoTile
