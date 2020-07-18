@@ -17,6 +17,10 @@ export const styles = StyleSheet.create({
     height: 75,
     width: 50,
   },
+  logo_xsm: {
+    height: 50,
+    width: 35,
+  },
   input: {
     height: 55,
     marginRight: 15,
@@ -91,5 +95,26 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     top: 15,
     right: 20,
+  },
+  bottom_center: {
+    position: 'absolute',
+    bottom: 15,
+    left: '40%',
+  },
+  imvelo_logo_inner: {
+    padding: 1,
+    backgroundColor: '#292e45',
+    borderRadius: 100,
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+  },
+  imvelo_logo_outter: {
+    backgroundColor: '#c7cbd9',
+    borderRadius: 100,
+    width: 65,
+    height: 65,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
