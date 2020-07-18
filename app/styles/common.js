@@ -13,6 +13,14 @@ export const styles = StyleSheet.create({
     width: 250,
     alignSelf: 'center',
   },
+  logo_sm: {
+    height: 75,
+    width: 50,
+  },
+  logo_xsm: {
+    height: 50,
+    width: 35,
+  },
   input: {
     height: 55,
     marginRight: 15,
@@ -75,5 +83,38 @@ export const styles = StyleSheet.create({
   pd_5: {
     paddingRight: 2,
     paddingLeft: 2,
+  },
+  background_video: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+  top_right_corner: {
+    position: 'absolute',
+    top: 15,
+    right: 20,
+  },
+  bottom_center: {
+    position: 'absolute',
+    bottom: 15,
+    left: '40%',
+  },
+  imvelo_logo_inner: {
+    padding: 1,
+    backgroundColor: '#292e45',
+    borderRadius: 100,
+    width: 50,
+    height: 50,
+    alignItems: 'center',
+  },
+  imvelo_logo_outter: {
+    backgroundColor: '#c7cbd9',
+    borderRadius: 100,
+    width: 65,
+    height: 65,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });

@@ -3,7 +3,6 @@ import {styles} from '../styles/common';
 import {FlatList, View} from 'react-native';
 import VideoTile from './VideoTile';
 import {groupRandomly} from '../helpers/arrays';
-import GradientContainer from './common/GradientContainer';
 
 const VideoList = props => {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -16,16 +15,22 @@ const VideoList = props => {
     <View style={[styles.col, styles.pd_5]} key={video.id}>
       <VideoTile
         video={video}
-        onPress={() => setPlayingVideo(video.id)}
+        onPress={() => onPressVideo(video)}
         playing={playingVideo === video.id}
       />
     </View>
   );
 
+  const onPressVideo = video => {
+    video.id === playingVideo
+      ? props.navigation.navigate('Main', {video})
+      : setPlayingVideo(video.id);
+  };
+
   const renderWideVideoTile = video => (
     <VideoTile
       video={video}
-      onPress={() => setPlayingVideo(video.id)}
+      onPress={() => onPressVideo(video)}
       playing={playingVideo === video.id}
       wide
     />
