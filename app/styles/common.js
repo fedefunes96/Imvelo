@@ -13,6 +13,10 @@ export const styles = StyleSheet.create({
     width: 250,
     alignSelf: 'center',
   },
+  logo_sm: {
+    height: 75,
+    width: 50,
+  },
   input: {
     height: 55,
     marginRight: 15,
@@ -82,5 +86,10 @@ export const styles = StyleSheet.create({
     left: 0,
     bottom: 0,
     right: 0,
+  },
+  top_right_corner: {
+    position: 'absolute',
+    top: 15,
+    right: 20,
   },
 });
