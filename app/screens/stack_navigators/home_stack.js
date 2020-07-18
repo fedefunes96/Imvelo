@@ -21,6 +21,11 @@ export default (HomeStack = createStackNavigator(
     },
     Main: {
       screen: MainScreen,
+      navigationOptions: {
+        headerTitle: null,
+        headerTransparent: true,
+        headerTintColor: 'white',
+      },
     },
   },
   {},
