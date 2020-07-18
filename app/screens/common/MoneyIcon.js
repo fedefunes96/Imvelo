@@ -6,6 +6,7 @@ const MoneyIcon = props => (
   <Image
     source={require('../../../assets/money_icon.png')}
     style={[styles.logo_sm, props.style]}
+    resizeMode="cover"
   />
 );
 
