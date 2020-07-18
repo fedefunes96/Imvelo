@@ -15,7 +15,7 @@ const VideoList = props => {
     <View style={[styles.col, styles.pd_5]} key={video.id}>
       <VideoTile
         video={video}
-        onPress={() => setPlayingVideo(video.id)}
+        onPress={() => onPressVideo(video)}
         playing={playingVideo === video.id}
       />
     </View>
