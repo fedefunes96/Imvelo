@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {COLORS} from '../config/colors';
 
 export const styles = StyleSheet.create({
   container: {
@@ -117,5 +118,13 @@ export const styles = StyleSheet.create({
     height: 65,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  video_footer: {
+    backgroundColor: COLORS.opposite,
+    padding: 10,
+  },
+  video_subtitle: {
+    color: 'black',
+    fontSize: 11,
   },
 });
