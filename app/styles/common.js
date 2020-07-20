@@ -134,4 +134,26 @@ export const styles = StyleSheet.create({
     backgroundColor: '#141B41',
     padding: 15,
   },
+  video_side_info: {
+    backgroundColor: 'rgba(30,30,30,0.78)',
+    position: 'absolute',
+    zIndex: 999,
+    top: 0,
+    right: 0,
+    height: 300,
+  },
+  right_center: {
+    position: 'absolute',
+    right: 0,
+    top: '42%',
+  },
+  left_bottom: {
+    position: 'absolute',
+    left: 0,
+    top: '70%',
+  },
+  text_description: {
+    color: '#ffb73b',
+    textAlign: 'center',
+  },
 });
