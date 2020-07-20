@@ -11,7 +11,7 @@ const VideoTile = props => {
         {props.playing ? (
           <Video
             source={{uri: props.video.source}}
-            style={props.wide ? styles.video_wide_tile : styles.video_tile}
+            style={styles.video_tile}
             muted={true}
             resizeMode={'cover'}
             posterResizeMode={'cover'}

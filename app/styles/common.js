@@ -60,18 +60,19 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   video_container: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 5,
     },
     shadowOpacity: 0.36,
     shadowRadius: 6.68,
-    elevation: 8,
+
+    elevation: 11,
   },
   video_tile: {
-    aspectRatio: 1,
-    width: 172,
+    aspectRatio: 1.5,
+    width: '100%',
   },
   video_wide_tile: {
     aspectRatio: 1,

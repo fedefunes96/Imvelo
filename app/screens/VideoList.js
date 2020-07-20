@@ -1,46 +1,30 @@
-import React, {useMemo, useState} from 'react';
+import React, {useState} from 'react';
 import {styles} from '../styles/common';
 import {FlatList, View} from 'react-native';
 import VideoTile from './VideoTile';
-import {groupRandomly} from '../helpers/arrays';
 
 const VideoList = props => {
   const [playingVideo, setPlayingVideo] = useState(null);
 
-  const groupedVideos = useMemo(() => groupRandomly(props.videos), [
-    props.videos,
-  ]);
+  const onViewRef = React.useRef(({viewableItems}) => {
+    setPlayingVideo(viewableItems[0].item.id);
+  });
 
-  const renderVideoTile = video => (
-    <View style={[styles.col, styles.pd_5]} key={video.id}>
-      <VideoTile
-        video={video}
-        onPress={() => onPressVideo(video)}
-        playing={playingVideo === video.id}
-      />
-    </View>
-  );
+  const viewConfigRef = React.useRef({ viewAreaCoveragePercentThreshold: 50 })
 
   const onPressVideo = video => {
-    video.id === playingVideo
-      ? props.navigation.navigate('Main', {video})
-      : setPlayingVideo(video.id);
+    props.navigation.navigate('Main', {video});
   };
 
-  const renderWideVideoTile = video => (
-    <VideoTile
-      video={video}
-      onPress={() => onPressVideo(video)}
-      playing={playingVideo === video.id}
-      wide
-    />
-  );
-
-  const renderVideosRow = videos => (
+  const renderVideoRow = video => (
     <View style={[styles.row, styles.m_10]}>
-      {videos.length > 1
-        ? videos.map(video => renderVideoTile(video))
-        : renderWideVideoTile(videos[0])}
+      <View style={[styles.col, styles.pd_5]} key={video.id}>
+        <VideoTile
+          video={video}
+          onPress={() => onPressVideo(video)}
+          playing={playingVideo === video.id}
+        />
+      </View>
     </View>
   );
 
@@ -48,9 +32,11 @@ const VideoList = props => {
     <View style={[styles.container, styles.align_items_center]}>
       <FlatList
         showsVerticalScrollIndicator={false}
-        data={groupedVideos}
-        renderItem={({item}) => renderVideosRow(item)}
-        keyExtractor={item => item[0].title}
+        onViewableItemsChanged={onViewRef.current}
+        viewabilityConfig={viewConfigRef.current}
+        data={props.videos}
+        renderItem={({item}) => renderVideoRow(item)}
+        keyExtractor={item => item.id.toString()}
       />
     </View>
   );
