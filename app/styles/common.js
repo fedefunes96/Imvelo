@@ -127,4 +127,11 @@ export const styles = StyleSheet.create({
     color: 'black',
     fontSize: 11,
   },
+  space_between: {
+    justifyContent: 'space-between',
+  },
+  video_info: {
+    backgroundColor: '#141B41',
+    padding: 15,
+  },
 });

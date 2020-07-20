@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {styles} from '../styles/common';
 import {FlatList, View} from 'react-native';
-import VideoTile from './VideoTile';
+import Video from './video';
 
 const VideoList = props => {
   const [playingVideo, setPlayingVideo] = useState(null);
@@ -19,7 +19,7 @@ const VideoList = props => {
   const renderVideoRow = video => (
     <View style={[styles.row, styles.m_10]}>
       <View style={[styles.col, styles.pd_5]} key={video.id}>
-        <VideoTile
+        <Video
           video={video}
           onPress={() => onPressVideo(video)}
           playing={playingVideo === video.id}
