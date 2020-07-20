@@ -140,12 +140,12 @@ export const styles = StyleSheet.create({
     zIndex: 999,
     top: 0,
     right: 0,
-    height: 300,
+    height: '100%',
   },
   right_center: {
     position: 'absolute',
     right: 0,
-    top: '42%',
+    top: '50%',
   },
   left_bottom: {
     position: 'absolute',

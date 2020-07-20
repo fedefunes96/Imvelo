@@ -8,7 +8,7 @@ const DEFAULT_BACKGROUND_COLOR = 'rgba(30,30,30,0.78)';
 const HIDDEN_BACKGROUND_COLOR = 'rgba(30,30,30,0)';
 
 const SidePanel = props => {
-  const slideAnim = useRef(new Animated.Value(30)).current;
+  const slideAnim = useRef(new Animated.Value(10)).current;
   const [showing, setShowing] = useState(false);
   const [backgroundColor, setbackgroundColor] = useState(
     HIDDEN_BACKGROUND_COLOR,
@@ -17,7 +17,7 @@ const SidePanel = props => {
   const slideIn = () => {
     setShowing(true);
     Animated.spring(slideAnim, {
-      toValue: 100,
+      toValue: 30,
       duration: 1000,
       useNativeDriver: false,
     }).start(setbackgroundColor(DEFAULT_BACKGROUND_COLOR));
@@ -26,7 +26,7 @@ const SidePanel = props => {
   const slideOut = () => {
     setShowing(false);
     Animated.spring(slideAnim, {
-      toValue: 30,
+      toValue: 10,
       duration: 1000,
       useNativeDriver: false,
     }).start(() => setbackgroundColor(HIDDEN_BACKGROUND_COLOR));
@@ -34,7 +34,16 @@ const SidePanel = props => {
 
   return (
     <Animated.View
-      style={[styles.video_side_info, {width: slideAnim, backgroundColor}]}>
+      style={[
+        styles.video_side_info,
+        {
+          width: slideAnim.interpolate({
+            inputRange: [10, 30],
+            outputRange: ['10%', '30%'],
+          }),
+          backgroundColor,
+        },
+      ]}>
       {showing ? (
         <Icon
           name="caret-right"
