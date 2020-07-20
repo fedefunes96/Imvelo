@@ -1,8 +1,9 @@
 import {styles} from '../../styles/common';
 import React, {useRef, useState} from 'react';
-import {Animated, View, TouchableWithoutFeedback} from 'react-native';
+import {Animated, View, Text, TouchableWithoutFeedback} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {COLORS} from '../../config/colors';
+import {Button} from 'react-native-paper';
 
 const DEFAULT_BACKGROUND_COLOR = 'rgba(30,30,30,0.78)';
 const HIDDEN_BACKGROUND_COLOR = 'rgba(30,30,30,0)';
@@ -44,15 +45,7 @@ const SidePanel = props => {
           backgroundColor,
         },
       ]}>
-      {showing ? (
-        <Icon
-          name="caret-right"
-          onPress={slideOut}
-          style={styles.left_bottom}
-          size={40}
-          color="white"
-        />
-      ) : (
+      {!showing && (
         <TouchableWithoutFeedback onPress={slideIn}>
           <View
             style={[
@@ -69,6 +62,7 @@ const SidePanel = props => {
         </TouchableWithoutFeedback>
       )}
       {showing && props.children}
+      {showing && <Button color="white" style={{paddingTop: 20}} onPress={slideOut}>Cerrar</Button>}
     </Animated.View>
   );
 };
