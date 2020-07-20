@@ -99,7 +99,7 @@ export const styles = StyleSheet.create({
   bottom_center: {
     position: 'absolute',
     bottom: 15,
-    left: '40%',
+    left: '43%',
   },
   imvelo_logo_inner: {
     padding: 1,
