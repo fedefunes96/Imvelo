@@ -57,12 +57,12 @@ const SidePanel = props => {
                 borderBottomLeftRadius: 10,
               },
             ]}>
-            <Icon name="caret-left" size={20} color={'white'} />
+            <Icon name="caret-left" size={30} color={'white'} />
           </View>
         </TouchableWithoutFeedback>
       )}
       {showing && props.children}
-      {showing && <Button color="white" style={{paddingTop: 20}} onPress={slideOut}>Cerrar</Button>}
+      {showing && <Button color="white" mode="contained" onPress={slideOut}>Cerrar</Button>}
     </Animated.View>
   );
 };
