@@ -1,14 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import VideoList from './VideoList';
 import convertToProxyURL from 'react-native-video-cache';
+import Loading from './common/loading';
 
-const VIDEOS_URL = "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/videos.json?alt=media&token=8050a750-9eb5-47c9-96e1-b90ab9baa4c3";
+const VIDEOS_URL =
+  'https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/videos.json?alt=media&token=45e87854-5f8f-4d3b-97f1-d3baa85ba28b';
 
 const HomeScreen = ({navigation}) => {
   const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchVideos = async () => {
+      setLoading(true);
       const response = await fetch(VIDEOS_URL);
       const rawVideos = await response.json();
       const cachedVideos = await Promise.all(
@@ -19,11 +23,16 @@ const HomeScreen = ({navigation}) => {
         }),
       );
       setVideos(cachedVideos);
+      setLoading(false);
     };
     fetchVideos();
   }, []);
 
-  return <VideoList videos={videos} navigation={navigation} />;
+  return loading ? (
+    <Loading />
+  ) : (
+    <VideoList videos={videos} navigation={navigation} />
+  );
 };
 
 export default HomeScreen;
