@@ -4,7 +4,7 @@ import convertToProxyURL from 'react-native-video-cache';
 import Loading from './common/loading';
 
 const VIDEOS_URL =
-  'https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/videos.json?alt=media&token=45e87854-5f8f-4d3b-97f1-d3baa85ba28b';
+  'https://arqsoft-tp2-africa-by-tito.s3.amazonaws.com/tdp1/data.json';
 
 const HomeScreen = ({navigation}) => {
   const [videos, setVideos] = useState([]);
