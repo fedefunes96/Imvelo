@@ -4,7 +4,7 @@ import convertToProxyURL from 'react-native-video-cache';
 import Loading from './common/loading';
 
 const VIDEOS_URL =
-  'https://arqsoft-tp2-africa-by-tito.s3.amazonaws.com/tdp1/data.json';
+  'https://raw.githubusercontent.com/fedefunes96/Imvelo/master/assets/videos.json?token=AEVUE2OZ6TIXJFL47GLVBH27DC4XC';
 
 const HomeScreen = ({navigation}) => {
   const [videos, setVideos] = useState([]);
