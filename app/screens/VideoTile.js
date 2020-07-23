@@ -4,6 +4,7 @@ import Video from 'react-native-video';
 import {styles} from '../styles/common';
 import SidePanel from './common/side_panel';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {getVideoBySource} from '../helpers/utils';
 
 const VideoTile = props => {
   return (
@@ -11,7 +12,7 @@ const VideoTile = props => {
       <View>
         {props.playing ? (
           <Video
-            source={{uri: props.video.source}}
+            source={getVideoBySource(props.video.source)}
             style={styles.video_tile}
             muted={true}
             resizeMode={'cover'}
