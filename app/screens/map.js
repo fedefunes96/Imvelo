@@ -5,9 +5,9 @@ import {styles} from '../styles/common';
 
 const Map = props => {
   const renderMarker = marker => (
-    <Marker coordinate={marker.coordinates}>
+    <Marker coordinate={marker.coordinates} key={marker.id}>
       <View style={styles.map_marker}>
-        <Image src={{uri: marker.thumb}} />
+        <Image source={{uri: marker.thumb}} />
       </View>
     </Marker>
   );
@@ -25,8 +25,7 @@ const Map = props => {
           longitude: 0,
           latitudeDelta: 80,
           longitudeDelta: 80,
-        }}
-      >
+        }}>
         {props.regions.map(region => renderMarker(region))}
       </MapView>
     </View>
