@@ -1,9 +1,17 @@
 import React from 'react';
-import {View} from 'react-native';
-import MapView from 'react-native-maps';
+import {View, Image} from 'react-native';
+import MapView, {Marker} from 'react-native-maps';
 import {styles} from '../styles/common';
 
-const Map = () => {
+const Map = props => {
+  const renderMarker = marker => (
+    <Marker coordinate={marker.coordinates}>
+      <View style={styles.map_marker}>
+        <Image src={{uri: marker.thumb}} />
+      </View>
+    </Marker>
+  );
+
   return (
     <View style={styles.container}>
       <MapView
@@ -18,7 +26,9 @@ const Map = () => {
           latitudeDelta: 80,
           longitudeDelta: 80,
         }}
-      />
+      >
+        {props.regions.map(region => renderMarker(region))}
+      </MapView>
     </View>
   );
 };
