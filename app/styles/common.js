@@ -156,4 +156,15 @@ export const styles = StyleSheet.create({
     color: '#ffb73b',
     textAlign: 'center',
   },
+  video_title: {
+    zIndex: 1,
+    position: 'absolute',
+    top: '10%',
+    right: '35%',
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
 });

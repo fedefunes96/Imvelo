@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import VideoList from './VideoList';
 import convertToProxyURL from 'react-native-video-cache';
 import Loading from './common/loading';
+import WorldScreen from './world_screen';
 
 const VIDEOS_URL =
   'https://raw.githubusercontent.com/fedefunes96/Imvelo/master/assets/videos.json?token=AEVUE2OZ6TIXJFL47GLVBH27DC4XC';
@@ -31,7 +32,7 @@ const HomeScreen = ({navigation}) => {
   return loading ? (
     <Loading />
   ) : (
-    <VideoList videos={videos} navigation={navigation} />
+    <WorldScreen />
   );
 };
 
