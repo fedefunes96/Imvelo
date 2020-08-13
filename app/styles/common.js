@@ -156,4 +156,77 @@ export const styles = StyleSheet.create({
     color: '#ffb73b',
     textAlign: 'center',
   },
+  chipListContainer: {
+    paddingBottom: 12,
+    paddingTop: 12,
+    backgroundColor: "#f1f1f1"
+  },
+  productContentListContainer: {
+    paddingBottom: 12,
+  },
+  productListContainer: {
+    paddingStart: 12,
+    paddingEnd: 12,
+  },
+  productSeparator: {
+    height: 8, 
+    width: "90%",
+    backgroundColor: "transparent",
+  },
+  productTouchableContainer: {
+    backgroundColor: "#f1f1f1",
+    borderRadius: 16,
+    shadowColor: "#000",
+    shadowOffset:{
+        width: 0,
+        height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 1.22,
+    elevation: 1,
+    marginBottom: 2,
+    borderColor: "rgba(0,0,0,0.005)",
+    borderWidth: 1,
+  },
+  productContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: "#fff",
+    borderRadius: 16,
+    padding: 12,
+    overflow: "hidden",
+  },
+  productImage: {
+    flex: 30,
+    width: "100%",
+    aspectRatio: 1,
+    resizeMode: 'contain',
+  },
+  productTextContainer: {
+    flex: 70,
+    width: "100%"
+  },
+  productTitle: {
+    flex: 5,
+    fontSize: 16,
+    fontWeight: 'bold',
+    paddingBottom: 12,
+    paddingStart: 12,
+    paddingEnd: 12
+  },
+  productDescription: {
+    flex: 90,
+    fontSize: 14,
+    paddingBottom: 12,    
+    paddingStart: 12,
+    paddingEnd: 12,
+  },
+  productPrice: {
+    flex: 5,
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: "green",
+    paddingStart: 12,
+    paddingEnd: 12,    
+  }
 });

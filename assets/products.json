@@ -1,0 +1,58 @@
+[
+    {
+        "id": 240,
+        "type": "Shirts",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/91z876pPPBL._AC_UL1500_.jpg",
+        "price": 500,
+        "description": "The classic Imvelo wolf T-shirt",
+        "name": "Imvelo wolf T-shirt"
+    },
+    {
+        "id": 45,
+        "type": "Teddies",
+        "image": "https://www.keeltoys.com/wp-content/uploads/2013/10/SB2515-1.jpg",
+        "price": 1050,
+        "description": "100% cotton teddy bear",
+        "name": "Imvelo teddy bear"        
+    },
+    {
+        "id": 457,
+        "type": "Videos",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/918Duu-1VrL.png",
+        "price": 250,
+        "description": "Recopilation of tigers",
+        "name": "Tiger video VOL.1"          
+    },
+    {
+        "id": 241,
+        "type": "Shirts",
+        "image": "https://ae01.alicdn.com/kf/HTB1oQAeckfb_uJkSmFPq6ArCFXah/2020-summer-Men-s-brand-clothing-O-Neck-short-sleeve-animal-T-shirt-monkey-lion-3D.jpg",
+        "price": 450,
+        "description": "A nice to have monkey T-shirt",
+        "name": "Imvelo monkey T-shirt"
+    },
+    {
+        "id": 545,
+        "type": "Accessories",
+        "image": "https://cdn.trendhunterstatic.com/phpthumbnails/39/39388/39388_1_600.jpeg",
+        "price": 250,
+        "description": "Simple tiger bracelet",
+        "name": "Tiger bracelet"
+    },
+    {
+        "id": 242,
+        "type": "Shirts",
+        "image": "https://www.pieces.com/dw/image/v2/ABBT_PRD/on/demandware.static/-/Sites-pim-catalog/default/dw048c7262/pim-static/large/17096438_Black_767134_001_ProductLarge.jpg?sw=1280",
+        "price": 750,
+        "description": "A very cool shirt including some animals",
+        "name": "Imvelo fancy shirt"
+    },    
+    {
+        "id": 243,
+        "type": "Shirts",
+        "image": "https://www.dhresource.com/0x0/f2/albu/g8/M01/0A/A7/rBVaVFzeJT6AdbStABSQGsEwYBk956.png/2019-newest-hot-sale-fashion-animal-the-lion.jpg",
+        "price": 350,
+        "description": "A nice to have lion T-shirt. Includes more than 1 lion",
+        "name": "Imvelo lion T-shirt"
+    }         
+]
