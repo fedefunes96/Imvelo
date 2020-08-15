@@ -13,7 +13,7 @@ const VideoList = props => {
   const viewConfigRef = React.useRef({ viewAreaCoveragePercentThreshold: 50 })
 
   const onPressVideo = video => {
-    props.navigation.navigate('Main', {video});
+    props.navigation.navigate('main', {video});
   };
 
   const renderVideoRow = video => (
