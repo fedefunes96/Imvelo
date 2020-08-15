@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import FAIcon from 'react-native-vector-icons/FontAwesome';
 import ProfileStack from './profile_stack';
 import HomeStack from './home_stack';
+import MerchStack from './merch_stack';
 import {COLORS} from '../../config/colors';
 import {FONTS} from '../../config/fonts';
 import WorldStack from './world_stack';
@@ -74,6 +75,28 @@ const TabNavigator = createMaterialBottomTabNavigator(
         barStyle: {backgroundColor: COLORS.opposite},
       },
     },
+    Merch: {
+      screen: MerchStack,
+      navigationOptions: {
+        tabBarLabel: (
+          <Text
+            style={{
+              fontSize: 12,
+              fontFamily: FONTS.roboto,
+            }}>
+            Products
+          </Text>
+        ),
+        tabBarIcon: ({tintColor}) => (
+          <View>
+            <Icon style={[{color: tintColor}]} size={25} name={'ios-cart'} />
+          </View>
+        ),
+        activeColor: COLORS.white,
+        inactiveColor: COLORS.gray,
+        barStyle: {backgroundColor: COLORS.opposite},
+      },
+    },    
   },
   {
     initialRouteName: 'Home',
