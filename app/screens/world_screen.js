@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Map from './map';
 
 const REGIONS_URL =
-  'https://raw.githubusercontent.com/fedefunes96/Imvelo/4-worldscreen/assets/regions.json';
+  'https://raw.githubusercontent.com/fedefunes96/Imvelo/master/assets/regions.json';
 
 const WorldScreen = ({navigation}) => {
   const [regions, setRegions] = useState([]);

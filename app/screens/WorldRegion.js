@@ -4,7 +4,7 @@ import useCachedVideos from '../hooks/useFetch';
 import Loading from './common/loading';
 
 const BASE_URL =
-  'https://raw.githubusercontent.com/fedefunes96/Imvelo/4-worldscreen/assets/';
+  'https://raw.githubusercontent.com/fedefunes96/Imvelo/master/assets/';
 
 const WorldRegion = ({navigation}) => {
   const [videos, setVideos] = useState([]);
