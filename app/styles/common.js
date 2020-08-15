@@ -228,5 +228,23 @@ export const styles = StyleSheet.create({
     color: "green",
     paddingStart: 12,
     paddingEnd: 12,    
-  }
+  },
+  video_title: {
+    zIndex: 1,
+    position: 'absolute',
+    top: '10%',
+    right: '35%',
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  map_image: {
+    height: 50,
+    width: 50,
+    borderRadius: 30,
+    borderColor: 'white',
+    borderWidth: 1,
+  },
 });

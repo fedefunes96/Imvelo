@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "coordinates": {
+      "latitude": -38.7167,
+      "longitude": -70.1583
+    },
+    "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/puma.jpg?alt=media&token=64a59396-ddae-49fa-9704-0bdddd318bb9"
+  },
+  {
+    "id": 2,
+    "coordinates": {
+      "latitude": -45.940560,
+      "longitude": -67.575000
+    },
+    "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/pinguino_pt.jfif?alt=media&token=e21eb6fe-f514-4181-af2f-1912b8f6d107"
+  },
+  {
+    "id": 3,
+    "coordinates": {
+      "latitude": 52.052490,
+      "longitude": 12.555284
+    },
+    "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/oso_pardo.jfif?alt=media&token=b47e4e8c-c996-462b-94ba-49d579c5c996"
+  }
+]
