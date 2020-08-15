@@ -12,7 +12,11 @@ const HomeScreen = ({navigation}) => {
 
   useCachedVideos(VIDEOS_URL, setLoading, setVideos);
 
-  return loading ? <Loading /> : <VideoList videos={videos} />;
+  return loading ? (
+    <Loading />
+  ) : (
+    <VideoList videos={videos} navigation={navigation} />
+  );
 };
 
 export default HomeScreen;

@@ -19,8 +19,7 @@ const Map = props => {
         style={styles.map}
         loadingEnabled={true}
         mapType="satellite"
-        zoomEnabled={false}
-        minZoomLevel={0}
+        maxZoomLevel={50}
         initialRegion={{
           latitude: 0,
           longitude: 0,

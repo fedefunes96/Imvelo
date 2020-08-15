@@ -16,7 +16,11 @@ const WorldRegion = ({navigation}) => {
 
   useCachedVideos(buildRegionUrl(), setLoading, setVideos);
 
-  return loading ? <Loading /> : <VideoList videos={videos} />;
+  return loading ? (
+    <Loading />
+  ) : (
+    <VideoList videos={videos} navigation={navigation} />
+  );
 };
 
 export default WorldRegion;
