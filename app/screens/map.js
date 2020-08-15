@@ -5,10 +5,11 @@ import {styles} from '../styles/common';
 
 const Map = props => {
   const renderMarker = marker => (
-    <Marker coordinate={marker.coordinates} key={marker.id}>
-      <View style={styles.map_marker}>
-        <Image source={{uri: marker.thumb}} />
-      </View>
+    <Marker
+      coordinate={marker.coordinates}
+      key={marker.id}
+      onPress={() => props.onRegionPress(marker.id)}>
+      <Image source={{uri: marker.thumb}} style={styles.map_image} />
     </Marker>
   );
 

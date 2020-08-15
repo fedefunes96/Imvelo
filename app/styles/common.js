@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   video_container: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: {
       width: 0,
       height: 5,
@@ -167,10 +167,11 @@ export const styles = StyleSheet.create({
   map: {
     ...StyleSheet.absoluteFillObject,
   },
-  map_marker: {
-    borderRadius: 15,
-    padding: 10,
-    borderWidth: 1,
+  map_image: {
+    height: 50,
+    width: 50,
+    borderRadius: 30,
     borderColor: 'white',
+    borderWidth: 1,
   },
 });

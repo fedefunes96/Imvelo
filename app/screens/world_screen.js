@@ -4,7 +4,7 @@ import Map from './map';
 const REGIONS_URL =
   'https://raw.githubusercontent.com/fedefunes96/Imvelo/4-worldscreen/assets/regions.json';
 
-const WorldScreen = () => {
+const WorldScreen = ({navigation}) => {
   const [regions, setRegions] = useState([]);
 
   useEffect(() => {
@@ -14,8 +14,12 @@ const WorldScreen = () => {
     };
     fetchRegions();
   });
-
-  return <Map regions={regions} />;
+  return (
+    <Map
+      regions={regions}
+      onRegionPress={regionId => navigation.navigate('Videos', {regionId})}
+    />
+  );
 };
 
 export default WorldScreen;
