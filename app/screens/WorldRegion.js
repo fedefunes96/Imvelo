@@ -14,7 +14,7 @@ const WorldRegion = ({navigation}) => {
     return `${BASE_URL}videos_region_${navigation.getParam('regionId')}.json`;
   };
 
-  //useCachedVideos(buildRegionUrl(), setLoading, setVideos);
+  useCachedVideos(buildRegionUrl(), setLoading, setVideos);
 
   return loading ? <Loading /> : <VideoList videos={videos} />;
 };
