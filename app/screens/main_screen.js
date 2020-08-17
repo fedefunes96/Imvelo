@@ -1,7 +1,7 @@
 import React from 'react';
 import Video from 'react-native-video';
 import {styles} from '../styles/common';
-import {View} from 'react-native';
+import {View, Image} from 'react-native';
 import MoneyIcon from './common/MoneyIcon';
 import ImveloButton from './common/imvelo_button';
 
@@ -20,6 +20,8 @@ const MainScreen = ({navigation}) => {
       />
       <MoneyIcon style={styles.top_right_corner} />
       <ImveloButton />
+      <Image source={require('../../assets/chromecast.png')}
+            style={{...styles.top_right_corner, top: 100, width: 50, height: 35}} />
     </View>
   );
 };
