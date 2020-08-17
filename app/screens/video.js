@@ -10,12 +10,13 @@ import {Image} from 'react-native';
 import getDangerImageSource from "../helpers/getDangerImage";
 import SidePanel from "./common/side_panel";
 import Icon from "react-native-vector-icons/FontAwesome";
-
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 
 const Video = props => {
   const [flipped, setFlipped] = useState(false);
 
   const image = getDangerImageSource(props.video.dangerLevel);
+  const foodIcon = props.video.food === 'herbivore' ? 'seedling' : 'drumstick-bite';
   return (
     <Surface style={styles.video_container}>
       <View>
@@ -64,6 +65,12 @@ const Video = props => {
               <Text style={styles.color_w}>Peligroso?</Text>
             </View>
             <Text style={styles.text_description}>{props.video.danger}</Text>
+            <View style={[styles.row, styles.align_items_center, styles.pd_5]}>
+              <Icon name="paw" color="white" style={{paddingRight: 5}} />
+              <Text style={styles.color_w}>Alimentación</Text>
+            </View>
+            <FontAwesome5 name={foodIcon} color={'white'} style={styles.text_description} />
+
           </View>
         </SidePanel>
       </View>
