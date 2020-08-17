@@ -6,10 +6,14 @@ import VideoFooter from './video_footer';
 import {View} from 'react-native';
 import {styles} from '../styles/common';
 import {Surface} from 'react-native-paper';
+import {Image} from 'react-native';
+import getDangerImageSource from "../helpers/getDangerImage";
+
 
 const Video = props => {
   const [flipped, setFlipped] = useState(false);
 
+  const image = getDangerImageSource(props.video.dangerLevel);
   return (
     <Surface style={styles.video_container}>
       <View>
@@ -24,6 +28,9 @@ const Video = props => {
           <VideoInfo video={props.video} />
         </FlipCard>
         <VideoFooter video={props.video} onSwitch={() => setFlipped(!flipped)} />
+        <Image style={{...styles.top_right_corner, height: 60, width: 40}}
+               source={image}
+        />
       </View>
     </Surface>
   );
