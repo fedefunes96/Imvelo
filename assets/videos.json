@@ -9,7 +9,9 @@
     "height": "150 Cm",
     "weight": "500 Kg",
     "name": "Joggy",
-    "danger": "Inofensivo"
+    "danger": "Inofensivo",
+    "dangerLevel": 2,
+    "food": "carnivore"
   },
   { "description" : "Visitá Punta Tombo y disfrutá de nuestros pinguinos autóctonos. Los pingüinos (Spheniscidae) son una familia de aves, la única del orden Sphenisciformes. Son aves marinas, no voladoras, que se distribuyen casi exclusivamente en el hemisferio sur, exceptuando el pingüino de las islas Galápagos (Spheniscus mendiculus). El nombre del orden proviene del vocablo spheniscus el cual proviene del griego σφήν (sphen, 'cuña') y el sufijo diminutivo -iscus, literalmente \"cuñita\", haciendo referencia a su forma hidrodinámica al nadar",
     "source" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/pinguinos.mp4?alt=media&token=538f4781-c3a2-459f-81e4-efe340bae49d",
@@ -21,7 +23,9 @@
     "height": "30 - 111 Cm",
     "weight": "15 - 23 Kg",
     "name": "Enemigos de Batman",
-    "danger": "Inofensivo"
+    "danger": "Inofensivo",
+    "dangerLevel": 3,
+    "food": "hervibore"
   },
   { "description" : "El puma, león de montaña o león americano (Nombre científico: Puma concolor) es un mamífero carnívoro de la familia Felidae nativo de América. Este felino vive en más lugares que cualquier otro mamífero silvestre terrestre del continente, ya que se extiende desde el Yukón, en Canadá, hasta el sur de la cordillera de los Andes y la Patagonia en América del Sur. El puma es adaptable y generalista, por lo que vive en los principales biomas de toda América. Es el segundo mayor félido en el continente americano, después del jaguar, y el cuarto más grande del mundo, junto con el leopardo después del tigre, y el león. Su tamaño es algo mayor que el del irbis o \"leopardo de las nieves\", aunque está más emparentado con los pequeños felinos, ya que, a diferencia de los grandes félidos del género Panthera, que pueden rugir, el puma ronronea como los felinos menores.",
     "source" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/puma.mp4?alt=media&token=db43e5c1-28d2-427c-bbaf-2c545b99e41d",
@@ -33,6 +37,8 @@
     "height": "85 Cm",
     "weight": "73 Kg",
     "name": "George",
-    "danger": "Peligroso"
+    "danger": "Peligroso",
+    "dangerLevel": 1,
+    "food": "carnivore"
   }
 ]
