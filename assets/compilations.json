@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/savage.jpg?alt=media&token=2fcf0245-d273-429c-b203-9fdefb1cfeb2",
+        "title": "Imvelo Savage",
+        "background": "red",
+        "info": "Con nuestra compilacion exclusiva de momentos salvajes, te ofrecemos una experiencia unica en la que vas a poder vivir los momentos mas salvajes de la naturaleza"
+    },
+    {
+        "id": 2,
+        "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/relax.jpg?alt=media&token=46b5b7c7-9947-48a2-ba69-23db0d3a5d2e",
+        "title": "Imvelo Relax",
+        "background": "blue",
+        "info": "Disfruta de esta compilacion exclusiva de los animales mas tranquilos del mundo. Observa diferentes especies en sus momentos de relax"
+    },
+    {
+        "id": 3,
+        "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/edu.jpg?alt=media&token=e6696440-033d-4ebd-b28e-f7e7bd5b41b6",
+        "title": "Imvelo EDU",
+        "background": "green",
+        "info": "Con nuestra compilacion EDU, te traemos los momentos claves de diversos animales que permiten observar y explicar distintos comportamientos de las diferentes especies. Ya sea para una clase, un video, o una presentacion, esta compilacion te llenara de momentos que la llevaran al siguiente nivel educativo"
+    }
+]

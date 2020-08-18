@@ -1,10 +1,21 @@
 import {StyleSheet} from 'react-native';
 import {COLORS} from '../config/colors';
+import { FONTS } from '../config/fonts';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    backgroundColor: "#b0bfbc",
+  },
+  top_container: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    backgroundColor: "#b0bfbc",
+    alignItems: 'flex-start',
+  },
+  justify_between: {
+    justifyContent: 'space-between',
   },
   align_items_center: {
     alignItems: 'center',
@@ -17,6 +28,17 @@ export const styles = StyleSheet.create({
   logo_sm: {
     height: 75,
     width: 50,
+  },
+  info_icon: {
+    alignSelf: 'center',
+    fontSize: 30,
+    paddingRight: 50,
+  },
+  go_icon: {
+    alignSelf: 'center',
+    fontSize: 30,
+    position: 'absolute',
+    right: -50,
   },
   logo_xsm: {
     height: 50,
@@ -72,7 +94,7 @@ export const styles = StyleSheet.create({
     elevation: 11,
   },
   video_tile: {
-    aspectRatio: 1.5,
+    aspectRatio: 1,
     width: '100%',
   },
   video_wide_tile: {
@@ -247,4 +269,44 @@ export const styles = StyleSheet.create({
     borderColor: 'white',
     borderWidth: 1,
   },
+  wide_tile: {
+    alignItems: 'center',
+    margin: 20,
+    padding: 5,
+  },
+  wide_tile_image: {
+    width: 360,
+    height: 180,
+  },
+  compilation_title: {
+    color: 'white',
+    fontSize: 20,
+  },
+  compilation_title_container: {
+    padding: 20,
+    position: 'relative',
+  },
+  info_container: {
+    height: 170,
+    padding: 10,
+  },
+  main_video: {
+    width: '100%',
+    height: '42.3%',
+    position: 'absolute',
+    top: 0,
+    borderWidth: 1,
+  },
+  main_video_title: {
+    fontFamily: FONTS.roboto,
+    fontWeight: 'bold',
+  },
+  main_video_subtitle: {
+    fontFamily: FONTS.roboto,
+    fontSize: 11,
+    color: 'grey',
+  },
+  main_video_desc_container: {
+    margin: 10,
+  }
 });

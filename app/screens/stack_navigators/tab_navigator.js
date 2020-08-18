@@ -9,6 +9,7 @@ import MerchStack from './merch_stack';
 import {COLORS} from '../../config/colors';
 import {FONTS} from '../../config/fonts';
 import WorldStack from './world_stack';
+import CompilationsStack from './compilations_stack';
 
 const TabNavigator = createMaterialBottomTabNavigator(
   {
@@ -96,7 +97,33 @@ const TabNavigator = createMaterialBottomTabNavigator(
         inactiveColor: COLORS.gray,
         barStyle: {backgroundColor: COLORS.opposite},
       },
-    },    
+    },
+    Compilations: {
+      screen: CompilationsStack,
+      navigationOptions: {
+        tabBarLabel: (
+          <Text
+            style={{
+              fontSize: 12,
+              fontFamily: FONTS.roboto,
+            }}>
+            Compilations
+          </Text>
+        ),
+        tabBarIcon: ({tintColor}) => (
+          <View>
+            <FAIcon
+              style={[{color: tintColor}]}
+              size={25}
+              name={'step-forward'}
+            />
+          </View>
+        ),
+        activeColor: COLORS.white,
+        inactiveColor: COLORS.gray,
+        barStyle: {backgroundColor: COLORS.opposite},
+      },
+    },
   },
   {
     initialRouteName: 'Home',
