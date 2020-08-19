@@ -16,7 +16,7 @@ const Compilations = ({navigation}) => {
       try {
         setLoading(true);
         const response = await fetch(COMPILATIONS_URL);
-        setCompilations(response.json());
+        setCompilations(await response.json());
       } catch (error) {
         console.log(error);
       } finally {

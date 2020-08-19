@@ -293,9 +293,6 @@ export const styles = StyleSheet.create({
   main_video: {
     width: '100%',
     height: '42.3%',
-    position: 'absolute',
-    top: 0,
-    borderWidth: 1,
   },
   main_video_title: {
     fontFamily: FONTS.roboto,
