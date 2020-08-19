@@ -292,7 +292,8 @@ export const styles = StyleSheet.create({
   },
   main_video: {
     width: '100%',
-    height: '42.3%',
+    aspectRatio: 1,
+    marginTop: -90,
   },
   main_video_title: {
     fontFamily: FONTS.roboto,
@@ -305,5 +306,30 @@ export const styles = StyleSheet.create({
   },
   main_video_desc_container: {
     margin: 10,
-  }
+    marginTop: -80,
+  },
+  subtitle: {
+    fontWeight: 'bold',
+  },
+  up_next_image: {
+    height: 200,
+    width: 350,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+  up_next_image_container: {
+    marginBottom: 10,
+  },
+  up_next_list: {
+    margin: 1,
+  },
+  up_next_container: {
+    marginLeft: 30,
+    marginRight: 30,
+    marginBottom: 10,
+    marginTop: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
 });
