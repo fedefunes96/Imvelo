@@ -41,10 +41,10 @@ const CompilationDetails = props => {
           onEnd={() => setCurrent(getNextVideoIndex())}
         />
         <View style={styles.main_video_desc_container}>
-          <Text style={styles.main_video_title}>
-            Koala educational information
+          <Text style={styles.main_video_title}>{currentVideo.title}</Text>
+          <Text style={styles.main_video_subtitle}>
+            {currentVideo.subtitle}
           </Text>
-          <Text style={styles.main_video_subtitle}>By Imvelo</Text>
         </View>
 
         <View style={styles.up_next_container}>

@@ -21,7 +21,7 @@ const MainScreen = ({navigation}) => {
       <MoneyIcon style={styles.top_right_corner} />
       <ImveloButton />
       <Image source={require('../../assets/chromecast.png')}
-            style={{...styles.top_right_corner, top: 100, width: 50, height: 35}} />
+            style={{...styles.top_right_corner, top: 100, width: 50, height: 35}} resizeMode="contain" />
     </View>
   );
 };

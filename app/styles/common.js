@@ -94,7 +94,7 @@ export const styles = StyleSheet.create({
     elevation: 11,
   },
   video_tile: {
-    aspectRatio: 1,
+    aspectRatio: 1.5,
     width: '100%',
   },
   video_wide_tile: {
@@ -162,7 +162,7 @@ export const styles = StyleSheet.create({
     zIndex: 999,
     top: 0,
     right: 0,
-    height: '100%',
+    height: '83%',
   },
   right_center: {
     position: 'absolute',
