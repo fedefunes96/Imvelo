@@ -10,5 +10,41 @@
     "weight": "73 Kg",
     "name": "George",
     "danger": "Peligroso"
+  },
+  {
+    "description": "Primates es un orden de mamíferos placentarios al que pertenecen los humanos y sus parientes más cercanos. Los miembros de este grupo surgieron hace entre cincuenta y cinco y ochenta y cinco millones de años (al final del Cretácico) a partir de pequeños mamíferos terrestres",
+    "source": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/Mono(Cordoba)Natural.mp4?alt=media&token=3878840a-5c8c-4666-8acd-516c7a16b6fa",
+    "subtitle": "By Imvelo",
+    "thumb": "https://descubrirturismo.com/wp-content/uploads/2018/09/mono.jpg",
+    "id": 1,
+    "specie": "Mamifero",
+    "height": "83 Cm",
+    "weight": "21 Kg",
+    "name": "George",
+    "danger": "No es Peligroso"
+  },
+  {
+    "description": "La llama (Lama glama) es un mamífero artiodáctilo doméstico de la familia Camelidae, abundante en la Puna o Altiplano de los Andes de Perú, Bolivia, Chile, Ecuador, Argentina y Colombia. Fue domesticada por los pueblos andinos nativos mediante selección artificial a partir del guanaco",
+    "source": "",
+    "subtitle": "By Imvelo",
+    "thumb": "https://sisanjuan2-imagenysistemas.netdna-ssl.com/media/xt-adaptive-images/optimized/480/media/k2/items/cache/2b1519c6961f0bff435ce9c3ea6795a6_L.jpg",
+    "id": 3,
+    "specie": "Mamifero",
+    "height": "180 Cm",
+    "weight": "180 Kg",
+    "name": "Llama que llama",
+    "danger": "No es Peligroso"
+  },
+  {
+    "description": "El llamado león americano, o simplemente puma, es un mamífero carnívoro y pertenece a la familia de los félidos. Puede llegar a medir 1,20 metros de longitud 0,65m de alzada y alcanzar entre 40 y 120 kilos de peso. En San Juan al puma se lo encuentra en diversas localizaciones, tanto en la montaña como en el llano. Es un animal de costumbres solitarias y sus actividades las desarrolla preferentemente al amanecer o el atardecer.",
+    "source": "",
+    "subtitle": "By Imvelo",
+    "thumb": "https://www.canal13sanjuan.com/u/fotografias/m/2018/10/2/f608x342-120774_150497_0.jpg",
+    "id": 4,
+    "specie": "Mamifero",
+    "height": "70 Cm",
+    "weight": "50 Kg",
+    "name": "Charlie",
+    "danger": "Peligroso"
   }
 ]
