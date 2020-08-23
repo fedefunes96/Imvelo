@@ -19,5 +19,12 @@
         "thumb" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/Relax%2FHawk.png?alt=media&token=401681a8-983b-4629-91de-7105b93b1893",
         "title" : "Savage collection 3",
         "id": 3
+    },
+    {
+        "source" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/Buffalo.mp4?alt=media&token=77aacee5-a12e-4d48-b089-af8f43e16d8b",
+        "subtitle" : "By Imvelo",
+        "thumb" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/Buffalo.png?alt=media&token=32ce1716-7675-45ec-8847-d14b96556269",
+        "title" : "Buffalo",
+        "id": 4
     }
 ]
