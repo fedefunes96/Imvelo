@@ -339,7 +339,8 @@ export const styles = StyleSheet.create({
   },
   productDetailImageBox: {
     flex: 90,
-    backgroundColor: "#f1f1f1",
+    width: "90%",
+    backgroundColor: "#fff",
     borderRadius: 16,
     shadowColor: "#000",
     shadowOffset:{
@@ -355,7 +356,7 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   productDetailImage: {
-    width: "100%",
+    flex: 1,
     aspectRatio: 1,
     resizeMode: 'contain', 
     overflow: 'hidden',
