@@ -332,4 +332,64 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
   },
+  productDetailView: {
+    flex: 1,
+    alignItems: 'center',
+    padding: 8
+  },
+  productDetailImageBox: {
+    flex: 90,
+    backgroundColor: "#f1f1f1",
+    borderRadius: 16,
+    shadowColor: "#000",
+    shadowOffset:{
+        width: 0,
+        height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 1.22,
+    elevation: 1,
+    marginBottom: 2,
+    borderColor: "rgba(0,0,0,0.005)",
+    borderWidth: 1,
+    overflow: 'hidden',
+  },
+  productDetailImage: {
+    width: "100%",
+    aspectRatio: 1,
+    resizeMode: 'contain', 
+    overflow: 'hidden',
+  },
+  productDetailName: {
+    flex: 10,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  productDetailDescription: {
+    fontSize: 14,
+    flex: 10,
+    fontWeight: '100',
+  },
+  productDetailButton: {
+    flex: 20,
+    width: "70%",
+    backgroundColor: 'green',
+    borderRadius: 16,
+    shadowColor: "#000",
+    shadowOffset:{
+        width: 0,
+        height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 1.22,
+    elevation: 1,
+    marginBottom: 2,
+    borderColor: "rgba(0,0,0,0.005)",
+    borderWidth: 1,
+    overflow: 'hidden',
+    justifyContent: 'center'
+  },
+  productDetailTextButton: {
+    fontSize: 20,
+  }
 });

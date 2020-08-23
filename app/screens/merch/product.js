@@ -5,7 +5,16 @@ import {COLORS} from '../../config/colors';
 
 const Product = props => {
     const onItemPress = () => {
-        props.onProductPress(props.id)
+        let product = {
+            id: props.id,
+            description: props.description,
+            name: props.name,
+            image: props.image,
+            price: props.price,
+            type: props.price
+        }
+
+        props.onProductPress(product)
     }
 
     return (

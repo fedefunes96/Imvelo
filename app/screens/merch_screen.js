@@ -42,7 +42,12 @@ export default class MerchScreen extends React.Component {
     }
 
     onProductPress = (product) => {
-
+        this.props.navigation.navigate(
+            'Details',
+            {
+                product: product
+            }
+        )
     }
 
     chipSelected = (type) => {
