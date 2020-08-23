@@ -86,5 +86,21 @@
       "longitude": 24.759501
     },
     "thumb": "https://www.theafricanwild.com/wp-content/uploads/2020/03/Photographic-Safari.jpeg"
+  },
+  {
+    "id": 12,
+    "coordinates": {
+      "latitude": -10.861639,
+      "longitude": -53.104038
+    },
+    "thumb": "https://www.nationsencyclopedia.com/photos/brazil-flora-and-fauna-1742.jpg"
+  },
+  {
+    "id": 13,
+    "coordinates": {
+      "latitude": 23.93034,
+      "longitude": -102.510521
+    },
+    "thumb": "https://www.lareserva.com/fimage/mexffx.jpg"
   }
 ]
