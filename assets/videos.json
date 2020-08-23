@@ -40,5 +40,33 @@
     "danger": "Peligroso",
     "dangerLevel": 1,
     "food": "carnivore"
+  },
+  { "description" : "Hydrochoerus hydrochaeris, llamado comúnmente carpincho, capibara o chigüire,2​es un roedor de la familia de los cávidos. Es el roedor viviente de mayor tamaño y peso del mundo. Vive en la zona terrestre de los bosques y sabanas tropicales hasta casi los 2.000 m s.n.m. Está relacionado con los agutíes, las chinchillas, los coipos y los conejillos de indias.",
+    "source" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/Carpincho(Natural).mp4?alt=media&token=c460789c-abf0-4c9b-ad59-bd19443034a5",
+    "subtitle" : "By Imvelo",
+    "thumb" : "https://www.agritotal.com/files/image/0/904/501c3d9844937_907_510!.jpg?s=8a80b4f1531e690678d98300fe619971&d=1597098479",
+    "title" : "Carpincho",
+    "id": 4,
+    "specie": "Roedor",
+    "height": "55 Cm",
+    "weight": "51 Kg",
+    "name": "Matero",
+    "danger": "Inofensivo",
+    "dangerLevel": 1,
+    "food": "hervibore"
+  },
+  { "description" : "Crocodylidae (castellanizado como crocodílidos o cocodrílidos) es una familia de saurópsidos (reptiles) arcosaurios comúnmente conocidos como cocodrilos. Incluye a catorce especies actuales.3​ Se trata de grandes reptiles semiacuáticos que viven en las regiones tropicales de África, Asia, América y Australia. .Aparecieron por primera vez durante el Eoceno, hace unos cincuenta y cinco millones de años.",
+    "source" : "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/Cocodrilo(Natural).mp4?alt=media&token=98e3a8c9-4b1c-4a4b-90e7-27f138c54a9a",
+    "subtitle" : "By Imvelo",
+    "thumb" : "https://cadenaser00.epimg.net/ser/imagenes/2020/06/19/a_vivir_que_son_dos_dias/1592592207_324108_1592593092_noticia_normal_recorte1.jpg",
+    "title" : "Cocodrilo",
+    "id": 5,
+    "specie": "Reptil",
+    "height": "5 m",
+    "weight": "650 Kg",
+    "name": "Jack",
+    "danger": "Peligroso",
+    "dangerLevel": 2,
+    "food": "carnivore"
   }
 ]
