@@ -22,5 +22,69 @@
       "longitude": 12.555284
     },
     "thumb": "https://firebasestorage.googleapis.com/v0/b/imvelo-ac4e9.appspot.com/o/oso_pardo.jfif?alt=media&token=b47e4e8c-c996-462b-94ba-49d579c5c996"
+  },
+  {
+    "id": 4,
+    "coordinates": {
+      "latitude": 56.130367,
+      "longitude": -106.346771
+    },
+    "thumb": "https://teaorcoffeeuvigo.files.wordpress.com/2017/02/moose.jpg?w=800"
+  },
+  {
+    "id": 5,
+    "coordinates": {
+      "latitude": 37.090240,
+      "longitude": -95.712891
+    },
+    "thumb": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlSvH2OxZq9JUY6yFw-xQvpVVRniQnDelnMQ&usqp=CAU"
+  },
+  {
+    "id": 6,
+    "coordinates": {
+      "latitude": 47.398349,
+      "longitude": 33.296552
+    },
+    "thumb": "https://i.pinimg.com/236x/d3/c4/e1/d3c4e18d70fa96c66e8cc7f6413969bb--photo-animaliere-forest-animals.jpg"
+  },
+  {
+    "id": 7,
+    "coordinates": {
+      "latitude": 65.067703,
+      "longitude": 116.8564
+    },
+    "thumb": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdSkilzCwzrZ2yZVWvKbrbpjhB0nQ-5q8Z9g&usqp=CAU"
+  },
+  {
+    "id": 8,
+    "coordinates": {
+      "latitude": -25,
+      "longitude": 134
+    },
+    "thumb": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQo_zev6B6HPJlA0PEUtuob0kjsUKhrMO_uOw&usqp=CAU"
+  },
+  {
+    "id": 9,
+    "coordinates": {
+      "latitude": -25.958045,
+      "longitude": 122.415161
+    },
+    "thumb": "https://www.ngenespanol.com/wp-content/uploads/2018/08/La-estrella-secreta-de-la-fauna-australiana.jpg"
+  },
+  {
+    "id": 10,
+    "coordinates": {
+      "latitude": 26.317301,
+      "longitude": 29.0548
+    },
+    "thumb": "https://img.ev.mu/images/attractions/919/960x640/13892.jpg"
+  },
+  {
+    "id": 11,
+    "coordinates": {
+      "latitude": -28.741699,
+      "longitude": 24.759501
+    },
+    "thumb": "https://www.theafricanwild.com/wp-content/uploads/2020/03/Photographic-Safari.jpeg"
   }
 ]
